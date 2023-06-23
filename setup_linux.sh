@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt update -y
+sudo apt upgrade -y
 git clone https://github.com/hruzgar/dotfiles.git
 cp dotfiles/.zshrc .
 cp dotfiles/.p10k.zsh .
