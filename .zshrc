@@ -78,7 +78,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-vi-mode)
+# plugins=(git zsh-vi-mode)
+plugins=(git)
 # plugins+=(zsh-vi-mode)
 # plugins=(... vi-mode)
 
@@ -123,3 +124,27 @@ alias la="exa -a"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+
+
+###########################
+# Settings for vim mode
+# found from https://dougblack.io/words/zsh-vi-mode.html
+# much smoother than zsh-vi-mode plugin
+###########################
+
+bindkey -v
+
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
