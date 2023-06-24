@@ -13,4 +13,5 @@ cp -f dotfiles/.zshrc .
 cp -f dotfiles/.p10k.zsh .
 
 git clone https://github.com/jeffreytse/zsh-vi-mode.git $HOME/.oh-my-zsh/custom/plugins/zsh-vi-mode
-zsh
+exec zsh -l
+
