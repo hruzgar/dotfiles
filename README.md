@@ -3,6 +3,7 @@ These are my dotfiles.
 The setup script was mainly created for my wsl (Windows Subsystem for Linux) installations.
 To get my setup on your ubuntu follow the instructions.
 ### Prerequisits
+- Ubuntu must be >=22.04
 - git
 - curl
 ### Install
