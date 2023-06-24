@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+MYUSER=$USER
+
 cd
 
 sudo apt update -y
@@ -13,5 +15,10 @@ cp -f dotfiles/.zshrc .
 cp -f dotfiles/.p10k.zsh .
 
 git clone https://github.com/jeffreytse/zsh-vi-mode.git $HOME/.oh-my-zsh/custom/plugins/zsh-vi-mode
-exec zsh -l
+
+sudo chsh -s /bin/zsh $MYUSER
+echo "Please restart your shell or start a new session to use Zsh."
+
+#source ~/.zshrc
+#exec zsh
 
