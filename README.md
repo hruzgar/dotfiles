@@ -1,7 +1,12 @@
 These are my dotfiles.
-# Setup
+# Ubuntu Setup
 The setup script was mainly created for my wsl (Windows Subsystem for Linux) installations.
-To get my setup on your ubuntu install just run
+To get my setup on your ubuntu follow the instructions.
+### Prerequisits
+- git
+- curl
+### Install
+run
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/hruzgar/dotfiles/main/setup_linux.sh)"
 ```
