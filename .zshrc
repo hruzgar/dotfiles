@@ -145,6 +145,6 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
 
-zle -N zle-line-init
-zle -N zle-keymap-select
+# zle -N zle-line-init
+# zle -N zle-keymap-select
 export KEYTIMEOUT=1
